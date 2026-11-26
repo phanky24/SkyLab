@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>snap</title>
+<link rel="stylesheet" href="/engine/fonts.css">
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="/engine/engine.css">
+<script src="/vendor/katex/katex.min.js"></script>
+<style>html, body { margin: 0; overflow: hidden; background: #000; } #host { position: fixed; inset: 0; }</style>
+</head>
+<body>
+<div id="host" class="mh-host"></div>
+<script type="module">
+// Máy chụp không giao diện: nạp một dự án rồi hiện bất kỳ cảnh nào ở bất kỳ thời điểm nào.
+// Lỗi của hoạt hình AI được gom lại cho mô hình đọc; bản xuất PowerPoint đo bố cục trên trang này.
+import { computeTimeline, createPlayer, holdPoints } from "/engine/engine.js";
+let player = null, tl = null;
+window.__errors = [];
+window.__load = async (project) => {
+  player?.destroy();
+  tl = computeTimeline(project);
+  player = createPlayer(document.getElementById("host"), project, tl, { mode: "present", onError: (m) => window.__errors.push(m) });
+  await player.ready();
+};
+window.__rest = async (i) => { player.showRest(i); await player.settled(); };
+// rest = true: trạng thái đứng yên (không làm mờ ý cũ) ở thời điểm lt
+window.__at = async (i, lt, rest = false) => { player.seek(tl.scenes[i].start + Math.min(lt, tl.scenes[i].duration - 0.01), { rest }); await player.settled(); };
+// độ dài cảnh i và các điểm dừng khi trình chiếu (giây, tính từ đầu cảnh)
+window.__timing = (i) => ({
+  duration: tl.scenes[i].duration,
+  holds: holdPoints(tl).filter((h) => h.scene === i).map((h) => h.t - tl.scenes[i].start),
+});
+window.__SNAP_READY = true;
+</script>
+</body>
+</html>

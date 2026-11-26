@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>In slide</title>
+<link rel="stylesheet" href="/engine/fonts.css">
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="/engine/engine.css">
+<script src="/vendor/katex/katex.min.js"></script>
+<style id="page-size"></style>
+<style>
+  html, body { margin: 0; background: #888; }
+  /* contain: sân khấu 1920px đã biến đổi không được tràn sang trang in kế tiếp */
+  .page { position: relative; overflow: hidden; contain: strict; break-inside: avoid; margin: 0 auto 12px; background: #fff; break-after: page; }
+  @media print { body { background: none; } .page { margin: 0; } }
+</style>
+</head>
+<body>
+<script type="module">
+import { computeTimeline, createPlayer } from "/engine/engine.js";
+const id = new URLSearchParams(location.search).get("id");
+const project = await (await fetch(`/api/projects/${id}`)).json();
+const [w, h] = ["13.333in", "7.5in"];
+document.getElementById("page-size").textContent = `@page { size: ${w} ${h}; margin: 0 } .page { width: ${w}; height: ${h}; }`;
+document.title = project.title;
+const players = project.scenes.map((scene) => {
+  const page = document.createElement("div");
+  page.className = "page mh-host";
+  document.body.appendChild(page);
+  const one = { ...project, scenes: [scene] };
+  return createPlayer(page, one, computeTimeline(one), { mode: "present" });
+});
+await Promise.all(players.map((p) => p.ready()));
+players.forEach((p) => p.showRest(0));
+await Promise.all(players.map((p) => p.settled()));
+window.__PRINT_READY = true;
+</script>
+</body>
+</html>

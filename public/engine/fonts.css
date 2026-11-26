@@ -1,0 +1,14 @@
+/* Phông chữ hỗ trợ tiếng Việt, lấy từ node_modules/@fontsource (chạy được ngoại tuyến). */
+@import url("/vendor/fonts/be-vietnam-pro/400.css");
+@import url("/vendor/fonts/be-vietnam-pro/500.css");
+@import url("/vendor/fonts/be-vietnam-pro/600.css");
+@import url("/vendor/fonts/be-vietnam-pro/700.css");
+@import url("/vendor/fonts/be-vietnam-pro/800.css");
+@import url("/vendor/fonts/be-vietnam-pro/900.css");
+@import url("/vendor/fonts/nunito/400.css");
+@import url("/vendor/fonts/nunito/600.css");
+@import url("/vendor/fonts/nunito/700.css");
+@import url("/vendor/fonts/nunito/800.css");
+@import url("/vendor/fonts/nunito/900.css");
+@import url("/vendor/fonts/patrick-hand/400.css");
+@import url("/vendor/fonts/lora/500.css");

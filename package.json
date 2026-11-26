@@ -1,0 +1,33 @@
+{
+    "name": "SkyLab",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "bun": ">=1.4"
+    },
+    "scripts": {
+        "start": "bun server/index.ts",
+        "dev": "bun --watch server/index.ts",
+        "setup": "bun install && bunx playwright install chromium",
+        "check": "tsc -p ."
+    },
+    "dependencies": {
+        "@expo-google-fonts/be-vietnam-pro": "^0.4.1",
+        "@expo-google-fonts/lora": "^0.4.2",
+        "@expo-google-fonts/nunito": "^0.4.2",
+        "@expo-google-fonts/patrick-hand": "^0.4.1",
+        "@fontsource/be-vietnam-pro": "^5.3.0",
+        "@fontsource/lora": "^5.3.0",
+        "@fontsource/nunito": "^5.3.0",
+        "@fontsource/patrick-hand": "^5.3.0",
+        "jszip": "^3.10.2",
+        "katex": "^0.19.1",
+        "playwright": "^1.64.1",
+        "pptxgenjs": "^4.0.1"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.4.4",
+        "typescript": "^7.0.2"
+    }
+}

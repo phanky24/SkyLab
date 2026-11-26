@@ -1,0 +1,192 @@
+{
+  "id": "737d3c96",
+  "title": "Chuyển động Brown",
+  "sample": true,
+  "subject": "Vật lí",
+  "grade": "12",
+  "theme": "science",
+  "assist": "write",
+  "sources": [
+    {
+      "title": "Giải sbt Vật lí 12 Bài 8 (Kết nối tri thức): Mô hình động học phân tử chất khí",
+      "url": "https://vietjack.me/sach-bai-tap-vat-li-12-bai-8-ket-noi-tri-thuc-mo-hinh-dong-hoc-phan-tu-230978.html"
+    },
+    {
+      "title": "BÀI GIẢNG: THUYẾT ĐỘNG HỌC PHÂN TỬ CHẤT KHÍ MÔN VẬT LÍ 12 - Studocu",
+      "url": "https://www.studocu.vn/vn/document/university-of-da-nang/he-thong-thong-tin-quan-ly/bai-giang-thuyet-dong-hoc-phan-tu-chat-khi-mon-vat-li-12/152466782"
+    },
+    {
+      "title": "Brownian motion",
+      "url": "https://www.britannica.com/science/Brownian-motion"
+    },
+    {
+      "title": "Lý thuyết Mô hình động học phân tử chất khí (Vật Lí 12 Kết nối tri thức Bài 8).",
+      "url": "https://vietjack.com/vat-li-12-kn/ly-thuyet-bai-8-mo-hinh-dong-hoc-phan-tu-chat-khi.jsp"
+    },
+    {
+      "title": "Giải Vật lí 12 Bài 8 (Kết nối tri thức): Mô hình động học phân tử chất khí",
+      "url": "https://vietjack.me/giai-vat-li-12-bai-8-ket-noi-tri-thuc-mo-hinh-dong-hoc-phan-tu-chat-kh-227840.html"
+    },
+    {
+      "title": "Brownian Motion: Definition, Cause and Examples",
+      "url": "https://physicstribune.com/matter/brownian-motion/"
+    },
+    {
+      "title": "Giáo án Vật lí 12 Cánh diều bài 1: Mô hình động học phân tử chất khí",
+      "url": "https://kenhgiaovien.com/tai-lieu/giao-vat-li-12-canh-dieu-bai-1-mo-hinh-dong-hoc-phan-tu-chat-khi"
+    },
+    {
+      "title": "Brownian Motion, \"Diverse and Undulating\"",
+      "url": "https://arxiv.org/pdf/0705.1951"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "b1f7e8f0",
+      "layout": "title",
+      "title": "Chuyển động Brown",
+      "icon": "🔬",
+      "subtitle": "Bằng chứng cho thấy phân tử có thật – Vật lí 12",
+      "notes": "Mở đầu bằng câu hỏi: Các em đã bao giờ thấy hạt bụi lơ lửng nhảy múa trong tia nắng chưa? Hôm nay ta tìm hiểu vì sao chúng chuyển động như vậy."
+    },
+    {
+      "id": "ebfc8f62",
+      "layout": "quote",
+      "title": "Chuyển động Brown là gì?",
+      "quote_text": "Chuyển động hỗn loạn, không ngừng của các hạt rất nhỏ trong chất lỏng hoặc chất khí, do các phân tử va chạm vào hạt.",
+      "quote_author": "Theo SGK Vật lí 12 (KNTT, Bài 8)",
+      "notes": "Nhấn mạnh ba từ khoá: hỗn loạn, không ngừng, quỹ đạo gấp khúc. Hỏi lớp: cái gì đang đẩy hạt đi?"
+    },
+    {
+      "id": "c1ef16cb",
+      "layout": "sim",
+      "title": "Mô hình tương tác: hạt bị phân tử va đập",
+      "notes": "Mời một bạn lên điều chỉnh thanh trượt, cả lớp dự đoán trước khi chạy. Hỏi: vì sao hạt to thì gần như không nhúc nhích?",
+      "custom_prompt": "Mô phỏng 2D chuyển động Brown trong một hộp vuông. Chỉ khoảng 40 phân tử nhỏ màu xanh (thưa, dễ nhìn, không rối mắt) bay nhanh theo mọi hướng, va chạm đàn hồi với nhau, với thành hộp và với một hạt tròn lớn màu vàng ở giữa. Hạt vàng bị va đập không đều từ mọi phía nên chuyển động hỗn loạn, để lại vết quỹ đạo gấp khúc màu đỏ. Thanh trượt cho giáo viên: (1) Nhiệt độ – tăng thì tốc độ trung bình của phân tử tăng, hạt vàng dịch chuyển mạnh hơn; (2) Kích thước hạt – hạt càng to (khối lượng lớn) thì càng ít nhúc nhích. Có nút Chạy/Dừng, nút Bật/Tắt vết và Xoá vết. YÊU CẦU KỸ THUẬT BẮT BUỘC: mọi thao tác trong mô phỏng (bấm nút Chạy/Dừng, Bật/Tắt vết, Xoá vết, kéo thanh trượt) chỉ tác động lên mô phỏng, tuyệt đối không được làm trình chiếu chuyển sang slide khác. Các nút dùng type=\"button\"; trong trình xử lý sự kiện click, pointerdown, mousedown, touchstart, keydown phải gọi event.stopPropagation() và event.preventDefault() (trừ thanh trượt chỉ stopPropagation); sau khi bấm nút gọi blur() để phím Space/Enter/mũi tên không kích hoạt lại nút hay chuyển slide; không gửi postMessage hay sự kiện điều hướng nào ra ngoài. Học sinh cần quan sát: hạt chuyển động hỗn loạn không ngừng, quỹ đạo là đường gấp khúc; nhiệt độ cao hơn hoặc hạt nhỏ hơn thì chuyển động Brown mạnh hơn.",
+      "code": "const TH = window.THEME;\nconst BX = 100, BY = 196, BS = 720, NM = 40, RM = 8, PXUM = 40;\nconst massOf = r => 20*Math.pow(r,3);\nfunction stopAll(el, act) {\n  ['pointerdown','mousedown','mouseup','pointerup','keydown','keyup','keypress','dblclick'].forEach(ev =>\n    el.addEventListener(ev, e => { e.stopPropagation(); e.preventDefault(); }));\n  el.addEventListener('touchstart', e => { e.stopPropagation(); e.preventDefault(); }, {passive:false});\n  el.addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); act(); el.blur(); }, {passive:false});\n  el.addEventListener('click', e => { e.stopPropagation(); e.preventDefault(); act(); el.blur(); });\n}\nMH.sim({\n  params: [\n    { key: \"T\", label: \"Nhiệt độ\", unit: \"K\", min: 100, max: 800, step: 10, value: 300 },\n    { key: \"R\", label: \"Bán kính hạt\", unit: \"µm\", min: 0.5, max: 2, step: 0.1, value: 1 }\n  ],\n  setup(p, rand) {\n    if (window.__brRoot) window.__brRoot.remove();\n    const stage = document.getElementById('stage');\n    const root = MH.el('div', { style: { position:'absolute', left:'0', top:'0', width:'1920px', height:'1080px', overflow:'hidden',\n      background:`radial-gradient(circle at 30% 20%, ${TH.card} 0%, ${TH.bg} 70%)`, fontFamily:TH.font_body, color:TH.ink } }, stage);\n    window.__brRoot = root;\n    MH.el('div', { text:'Mô hình chuyển động Brown: hạt bị phân tử va đập', style:{position:'absolute',left:'100px',top:'28px',fontSize:'62px',fontWeight:'800',fontFamily:TH.font_head,color:TH.ink} }, root);\n    MH.el('div', { text:'Quan sát: hạt vàng bị phân tử va đập không đều từ mọi phía → chuyển động hỗn loạn, quỹ đạo gấp khúc.', style:{position:'absolute',left:'100px',top:'112px',fontSize:'34px',color:TH.muted} }, root);\n    const frame = MH.el('div', { style:{position:'absolute',left:(BX-6)+'px',top:(BY-6)+'px',width:BS+'px',height:BS+'px',border:`6px solid ${TH.ink}`,borderRadius:'10px',background:'#fbfdff',boxShadow:'0 10px 30px rgba(0,0,0,0.15)',overflow:'hidden'} }, root);\n    const cv = MH.el('canvas', { width:BS, height:BS, style:{position:'absolute',left:'0',top:'0',width:BS+'px',height:BS+'px'} }, frame);\n    cv.width = BS; cv.height = BS;\n    const ctx = cv.getContext('2d');\n    MH.el('div', { text:'(phân tử và hạt không vẽ theo tỉ lệ)', style:{position:'absolute',left:BX+'px',top:(BY+BS+8)+'px',fontSize:'24px',color:TH.muted,fontStyle:'italic'} }, root);\n\n    const PX = 900, PW = 920;\n    const card = MH.el('div', { style:{position:'absolute',left:PX+'px',top:BY+'px',width:PW+'px',height:'250px',background:TH.card,border:`2px solid ${TH.line}`,borderRadius:'18px',padding:'20px 30px',boxSizing:'border-box'} }, root);\n    const mkRow = (label, color) => {\n      const r = MH.el('div', { style:{display:'flex',justifyContent:'space-between',fontSize:'34px',lineHeight:'52px'} }, card);\n      MH.el('span', { text:label, style:{color:TH.muted} }, r);\n      return MH.el('span', { text:'', style:{fontWeight:'700',color:color||TH.ink} }, r);\n    };\n    const rT = mkRow('Nhiệt độ T');\n    const rV = mkRow('Tốc độ TB phân tử', '#3b82f6');\n    const rM = mkRow('Khối lượng hạt vàng', '#d99a00');\n    const rD = mkRow('Hạt cách điểm xuất phát', '#ef4444');\n\n    const s = { root, ctx, n: NM, x:new Float64Array(NM), y:new Float64Array(NM), vx:new Float64Array(NM), vy:new Float64Array(NM),\n      bx: BS/2, by: BS/2, bvx: 0, bvy: 0, R: 40*p.R, M: massOf(p.R), x0: BS/2, y0: BS/2,\n      trail: [[BS/2, BS/2]], showTrail: true, hits: [], t: 0, k: 0, graph: [], rT, rV, rM, rD, meanSp: 0 };\n\n    const btnRow = MH.el('div', { style:{position:'absolute',left:PX+'px',top:(BY+270)+'px',display:'flex',gap:'20px'} }, root);\n    const bstyle = {fontSize:'32px',fontFamily:TH.font_body,fontWeight:'700',padding:'12px 28px',borderRadius:'14px',border:`3px solid ${TH.accent}`,cursor:'pointer'};\n    const bTrail = MH.el('button', { type:'button', text:'Tắt vết', style:Object.assign({}, bstyle, {background:TH.accent,color:'#fff'}) }, btnRow);\n    bTrail.type = 'button';\n    const bClear = MH.el('button', { type:'button', text:'Xoá vết', style:Object.assign({}, bstyle, {background:'#fff',color:TH.accent}) }, btnRow);\n    bClear.type = 'button';\n    stopAll(bTrail, () => { s.showTrail = !s.showTrail; bTrail.textContent = s.showTrail ? 'Tắt vết' : 'Bật vết'; });\n    stopAll(bClear, () => { s.trail = [[s.bx, s.by]]; s.x0 = s.bx; s.y0 = s.by; s.graph = []; });\n    const leg = MH.el('div', { style:{position:'absolute',left:(PX+430)+'px',top:(BY+280)+'px',fontSize:'30px',color:TH.muted,display:'flex',gap:'24px',alignItems:'center'} }, root);\n    leg.innerHTML = '<span><span style=\"display:inline-block;width:20px;height:20px;border-radius:50%;background:#3b82f6;vertical-align:middle\"></span> phân tử</span><span><span style=\"display:inline-block;width:28px;height:28px;border-radius:50%;background:#f6c343;border:2px solid #a87a00;vertical-align:middle\"></span> hạt Brown</span>';\n\n    const GY = BY + 370, GH = 360;\n    const gcard = MH.el('div', { style:{position:'absolute',left:PX+'px',top:GY+'px',width:PW+'px',height:GH+'px',background:TH.card,border:`2px solid ${TH.line}`,borderRadius:'18px'} }, root);\n    MH.el('div', { text:'Khoảng cách hạt tới điểm xuất phát (µm) theo thời gian', style:{position:'absolute',left:'24px',top:'12px',fontSize:'30px',fontWeight:'700',color:TH.ink} }, gcard);\n    const svg = MH.svg('svg', { width:PW, height:GH-60, style:{position:'absolute',left:'0',top:'58px'} }, gcard);\n    s.gx0 = 90; s.gw = PW-130; s.gy0 = 20; s.gh = GH-60-70;\n    MH.svg('line', { x1:s.gx0, y1:s.gy0+s.gh, x2:s.gx0+s.gw, y2:s.gy0+s.gh, stroke:TH.ink, 'stroke-width':3 }, svg);\n    MH.svg('line', { x1:s.gx0, y1:s.gy0, x2:s.gx0, y2:s.gy0+s.gh, stroke:TH.ink, 'stroke-width':3 }, svg);\n    s.gMax = MH.svg('text', { x:s.gx0-10, y:s.gy0+10, 'text-anchor':'end', 'font-size':26, fill:TH.muted, text:'' }, svg);\n    MH.svg('text', { x:s.gx0-10, y:s.gy0+s.gh, 'text-anchor':'end', 'font-size':26, fill:TH.muted, text:'0' }, svg);\n    MH.svg('text', { x:s.gx0+s.gw, y:s.gy0+s.gh+38, 'text-anchor':'end', 'font-size':26, fill:TH.muted, text:'20 s gần nhất →' }, svg);\n    s.gLine = MH.svg('polyline', { points:'', fill:'none', stroke:'#ef4444', 'stroke-width':4, 'stroke-linejoin':'round' }, svg);\n\n    const vr = 260*Math.sqrt(p.T/300);\n    for (let i=0;i<NM;i++){\n      let ok=false, tx, ty, tries=0;\n      while(!ok && tries<500){ tries++;\n        tx = RM + rand()*(BS-2*RM); ty = RM + rand()*(BS-2*RM); ok = true;\n        if (Math.hypot(tx-s.bx, ty-s.by) < s.R+RM+10) ok=false;\n        for (let j=0;j<i && ok;j++) if (Math.hypot(tx-s.x[j],ty-s.y[j])<2*RM+4) ok=false;\n      }\n      s.x[i]=tx; s.y[i]=ty;\n      const sp = vr/Math.SQRT2*Math.sqrt(-2*Math.log(1-rand()*0.999)), a = rand()*Math.PI*2;\n      s.vx[i]=sp*Math.cos(a); s.vy[i]=sp*Math.sin(a);\n    }\n    return s;\n  },\n  step(s, dt, p, rand) {\n    const R = 40*p.R, M = massOf(p.R), m = 1;\n    s.R = R; s.M = M;\n    s.bx = MH.clamp(s.bx, R, BS-R); s.by = MH.clamp(s.by, R, BS-R);\n    const n = s.n, x=s.x, y=s.y, vx=s.vx, vy=s.vy;\n    const sub = 3, h = dt/sub;\n    for (let k=0;k<sub;k++){\n      for (let i=0;i<n;i++){\n        x[i]+=vx[i]*h; y[i]+=vy[i]*h;\n        if (x[i]<RM){x[i]=RM; vx[i]=Math.abs(vx[i]);} else if (x[i]>BS-RM){x[i]=BS-RM; vx[i]=-Math.abs(vx[i]);}\n        if (y[i]<RM){y[i]=RM; vy[i]=Math.abs(vy[i]);} else if (y[i]>BS-RM){y[i]=BS-RM; vy[i]=-Math.abs(vy[i]);}\n      }\n      s.bx+=s.bvx*h; s.by+=s.bvy*h;\n      if (s.bx<R){s.bx=R; s.bvx=Math.abs(s.bvx);} else if (s.bx>BS-R){s.bx=BS-R; s.bvx=-Math.abs(s.bvx);}\n      if (s.by<R){s.by=R; s.bvy=Math.abs(s.bvy);} else if (s.by>BS-R){s.by=BS-R; s.bvy=-Math.abs(s.bvy);}\n      for (let i=0;i<n;i++){\n        for (let j=i+1;j<n;j++){\n          const dx=x[i]-x[j], dy=y[i]-y[j], d2=dx*dx+dy*dy;\n          if (d2 < 4*RM*RM && d2>1e-9){\n            const d=Math.sqrt(d2), nx=dx/d, ny=dy/d;\n            const vn=(vx[i]-vx[j])*nx+(vy[i]-vy[j])*ny;\n            if (vn<0){ vx[i]-=vn*nx; vy[i]-=vn*ny; vx[j]+=vn*nx; vy[j]+=vn*ny; }\n            const ov=(2*RM-d)/2; x[i]+=nx*ov; y[i]+=ny*ov; x[j]-=nx*ov; y[j]-=ny*ov;\n          }\n        }\n        const dx=x[i]-s.bx, dy=y[i]-s.by, d2=dx*dx+dy*dy, rr=R+RM;\n        if (d2<rr*rr && d2>1e-9){\n          const d=Math.sqrt(d2), nx=dx/d, ny=dy/d;\n          const vn=(vx[i]-s.bvx)*nx+(vy[i]-s.bvy)*ny;\n          if (vn<0){\n            const fm=2*M/(m+M), fb=2*m/(m+M);\n            vx[i]-=fm*vn*nx; vy[i]-=fm*vn*ny; s.bvx+=fb*vn*nx; s.bvy+=fb*vn*ny;\n            s.hits.push({a:Math.atan2(ny,nx), age:0});\n            if (s.hits.length>14) s.hits.shift();\n          }\n          const ov=rr-d;\n          x[i]+=nx*ov*M/(m+M); y[i]+=ny*ov*M/(m+M);\n          s.bx-=nx*ov*m/(m+M); s.by-=ny*ov*m/(m+M);\n        }\n      }\n    }\n    const damp = Math.exp(-0.8*dt);\n    s.bvx*=damp; s.bvy*=damp;\n    let e=0; for (let i=0;i<n;i++) e+=vx[i]*vx[i]+vy[i]*vy[i];\n    const rms=Math.sqrt(e/n), target=260*Math.sqrt(p.T/300);\n    const f=1+0.03*(target/Math.max(rms,1)-1);\n    let ms=0;\n    for (let i=0;i<n;i++){vx[i]*=f; vy[i]*=f; ms+=Math.hypot(vx[i],vy[i]);}\n    s.meanSp = s.meanSp===0 ? ms/n : 0.97*s.meanSp + 0.03*(ms/n);\n    for (const hh of s.hits) hh.age+=dt;\n    s.t+=dt; s.k++;\n    if (s.k%3===0){ s.trail.push([s.bx,s.by]); if (s.trail.length>5000) s.trail.splice(0,1000); }\n    if (s.k%6===0){ s.graph.push([s.t, Math.hypot(s.bx-s.x0, s.by-s.y0)/PXUM]); if (s.graph.length>201) s.graph.shift(); }\n  },\n  draw(s, p, t) {\n    const c = s.ctx;\n    c.clearRect(0,0,BS,BS);\n    c.strokeStyle='rgba(120,140,170,0.12)'; c.lineWidth=1;\n    for (let g=40; g<BS; g+=40){ c.beginPath(); c.moveTo(g,0); c.lineTo(g,BS); c.moveTo(0,g); c.lineTo(BS,g); c.stroke(); }\n    if (s.showTrail && s.trail.length>1){\n      c.strokeStyle='#dc2626'; c.lineWidth=3; c.lineJoin='round'; c.beginPath();\n      c.moveTo(s.trail[0][0], s.trail[0][1]);\n      for (let i=1;i<s.trail.length;i++) c.lineTo(s.trail[i][0], s.trail[i][1]);\n      c.lineTo(s.bx,s.by); c.stroke();\n      c.fillStyle='#dc2626'; c.beginPath(); c.arc(s.trail[0][0], s.trail[0][1], 7, 0, 7); c.fill();\n    }\n    for (let i=0;i<s.n;i++){\n      c.fillStyle='#3b82f6'; c.beginPath(); c.arc(s.x[i], s.y[i], RM, 0, 7); c.fill();\n      c.fillStyle='rgba(255,255,255,0.6)'; c.beginPath(); c.arc(s.x[i]-2.5, s.y[i]-2.5, 2.5, 0, 7); c.fill();\n    }\n    const R=s.R;\n    const gr=c.createRadialGradient(s.bx-R*0.35, s.by-R*0.35, R*0.1, s.bx, s.by, R);\n    gr.addColorStop(0,'#fff3b0'); gr.addColorStop(0.6,'#f6c343'); gr.addColorStop(1,'#d99a00');\n    c.fillStyle=gr; c.beginPath(); c.arc(s.bx,s.by,R,0,7); c.fill();\n    c.strokeStyle='#a87a00'; c.lineWidth=3; c.stroke();\n    for (const hh of s.hits){\n      if (hh.age>0.25) continue;\n      const a=1-hh.age/0.25;\n      c.fillStyle=`rgba(255,80,40,${a})`; c.beginPath();\n      c.arc(s.bx+Math.cos(hh.a)*R, s.by+Math.sin(hh.a)*R, 6+6*(1-a), 0, 7); c.fill();\n    }\n    s.rT.textContent = p.T + ' K';\n    s.rV.textContent = '≈ ' + Math.round(s.meanSp*2.066/10)*10 + ' m/s';\n    s.rM.textContent = '≈ ' + (s.M<10 ? s.M.toFixed(1) : Math.round(s.M)) + ' × phân tử';\n    s.rD.textContent = (Math.hypot(s.bx-s.x0, s.by-s.y0)/PXUM).toFixed(2) + ' µm';\n    const G=s.graph;\n    let mx=1; for (const g of G) if (g[1]>mx) mx=g[1];\n    mx=Math.ceil(mx*1.15);\n    s.gMax.textContent = mx;\n    if (G.length){\n      const t1=G[G.length-1][0];\n      let pts=''; for (const g of G){ const xx=s.gx0+s.gw*((g[0]-(t1-20))/20), yy=s.gy0+s.gh*(1-g[1]/mx); if (xx>=s.gx0) pts+=xx.toFixed(1)+','+yy.toFixed(1)+' '; }\n      s.gLine.setAttribute('points', pts);\n    }\n  }\n});",
+      "seconds": 12
+    },
+    {
+      "id": "b7923566",
+      "layout": "steps",
+      "title": "Thí nghiệm thật: hạt khói trong không khí",
+      "notes": "So sánh với mô phỏng vừa xem: chấm sáng chính là hạt vàng, phân tử khí thì không nhìn thấy được.",
+      "items": [
+        {
+          "text": "Đưa khói vào buồng kính nhỏ, đậy kín",
+          "detail": "Hạt khói đóng vai trò hạt Brown"
+        },
+        {
+          "text": "Chiếu chùm sáng mạnh từ bên cạnh",
+          "detail": "Hạt khói tán xạ ánh sáng thành chấm sáng"
+        },
+        {
+          "text": "Quan sát qua kính hiển vi",
+          "detail": "Thấy các chấm sáng chuyển động hỗn loạn, không ngừng"
+        },
+        {
+          "text": "Đánh dấu vị trí hạt sau mỗi khoảng thời gian",
+          "detail": "Nối các điểm được đường gấp khúc bất kì"
+        }
+      ]
+    },
+    {
+      "id": "f5af5a71",
+      "layout": "table",
+      "title": "Điều gì làm chuyển động Brown mạnh hơn?",
+      "notes": "Liên hệ lại với thanh trượt trong mô phỏng. Giải thích: hạt lớn bị va từ mọi phía gần như cân bằng nên tổng lực gần bằng 0.",
+      "table_headers": [
+        "Yếu tố",
+        "Thay đổi",
+        "Chuyển động Brown"
+      ],
+      "table_rows": [
+        [
+          "Nhiệt độ",
+          "Tăng",
+          "Mạnh hơn"
+        ],
+        [
+          "Độ nhớt môi trường",
+          "Giảm",
+          "Mạnh hơn"
+        ],
+        [
+          "Kích thước hạt",
+          "Nhỏ hơn",
+          "Mạnh hơn"
+        ],
+        [
+          "Vật lớn",
+          "Va chạm bù trừ",
+          "Không quan sát được"
+        ]
+      ]
+    },
+    {
+      "id": "9416e601",
+      "layout": "formula",
+      "title": "Công thức của Einstein (1905)",
+      "latex": "\\langle x^2 \\rangle = 2Dt = \\dfrac{RT}{3\\pi \\eta a N_A}\\, t",
+      "explain": "⟨x²⟩: bình phương độ dời trung bình (m²); T: nhiệt độ (K); η: độ nhớt (Pa·s); a: bán kính hạt (m); t: thời gian (s). Đo ⟨x²⟩ qua kính hiển vi sẽ tính được số Avogadro N_A.",
+      "notes": "Không cần học thuộc, chỉ cần đọc được: T tăng thì ⟨x²⟩ tăng; η, a tăng thì ⟨x²⟩ giảm. Đây chính là bảng ở slide trước dưới dạng toán học."
+    },
+    {
+      "id": "ee93308f",
+      "layout": "timeline",
+      "title": "Hành trình chứng minh phân tử có thật",
+      "notes": "Kể thêm: Brown thử cả bụi, muội than, đá nghiền nên loại bỏ giả thuyết hạt có sự sống. Thí nghiệm Perrin thuyết phục cả những người hoài nghi như Mach, Ostwald.",
+      "items": [
+        {
+          "text": "1827",
+          "detail": "Brown quan sát hạt nhỏ từ phấn hoa trong nước qua kính hiển vi"
+        },
+        {
+          "text": "1905–1906",
+          "detail": "Einstein và Smoluchowski xây dựng lí thuyết chuyển động Brown"
+        },
+        {
+          "text": "1908–1913",
+          "detail": "Perrin đo đạc, tìm được N_A ≈ 6×10²³"
+        },
+        {
+          "text": "1926",
+          "detail": "Perrin nhận Nobel Vật lí về cấu trúc gián đoạn của vật chất"
+        }
+      ]
+    },
+    {
+      "id": "4c6cef6d",
+      "layout": "big_number",
+      "title": "Brown thực sự đã thấy gì?",
+      "value": "2",
+      "unit": "μm",
+      "label": "Đường kính hạt mỡ, tinh bột do phấn hoa giải phóng – không phải chính hạt phấn hoa (50–100 μm)",
+      "notes": "Hỏi lớp: vì sao hạt phấn hoa 50–100 μm lại khó thấy chuyển động Brown? Gợi ý: nhớ lại ảnh hưởng của kích thước hạt."
+    },
+    {
+      "id": "fe6ae688",
+      "layout": "quiz",
+      "title": "Thử thách nhanh",
+      "explain": "Hạt nhỏ, nhiệt độ cao và môi trường ít nhớt (nước) đều làm ⟨x²⟩ lớn hơn.",
+      "question": "Trường hợp nào hạt chuyển động Brown mạnh nhất?",
+      "notes": "Cho lớp giơ tay chọn đáp án trong 15 giây. Sau đó kiểm chứng lại bằng mô phỏng.",
+      "options": [
+        "Hạt lớn trong nước lạnh",
+        "Hạt nhỏ trong nước nóng",
+        "Hạt lớn trong dầu nóng",
+        "Hạt nhỏ trong glixerin lạnh"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": "0167e1f3",
+      "layout": "ending",
+      "title": "Phân tử luôn chuyển động hỗn loạn, không ngừng",
+      "subtitle": "Cảm ơn thầy cô và các bạn đã lắng nghe!",
+      "notes": "Tóm tắt một câu: chuyển động Brown là cửa sổ giúp ta “nhìn thấy” phân tử. Mời các bạn đặt câu hỏi."
+    }
+  ],
+  "createdAt": 1795091820527,
+  "updatedAt": 1795571415332
+}

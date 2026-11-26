@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkyLab</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+<link rel="stylesheet" href="/engine/fonts.css">
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="/engine/engine.css">
+<link rel="stylesheet" href="/app/app.css">
+<script src="/vendor/katex/katex.min.js"></script>
+</head>
+<body>
+<aside class="side">
+  <a class="logo" href="#/" aria-label="SkyLab – Tổng quan"><span class="logo-text">Sky<span>Lab</span></span></a>
+  <nav class="side-nav" aria-label="Điều hướng chính">
+    <span class="side-h">Menu</span>
+    <a href="#/" data-nav="home" title="Tổng quan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></svg><span class="side-label">Tổng quan</span></a>
+    <a href="#/new" data-nav="new" title="Slide thuyết trình"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span class="side-label">Slide thuyết trình</span></a>
+  </nav>
+  <div class="side-foot">
+    <div class="side-promo"><b>Chưa biết bắt đầu từ đâu?</b><span>Mở bài mẫu để xem một bài giảng hoàn chỉnh.</span><a href="#/sample">Mở bài mẫu</a></div>
+    <button id="btn-theme" class="side-btn" type="button" aria-pressed="false" title="Đổi giao diện sáng/tối"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><span class="side-label">Chế độ tối</span></button>
+    <button id="btn-settings" class="side-btn" type="button" title="Cài đặt AI"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 15a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 9 4.6V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0 1.2 2.9H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="side-label">Cài đặt AI</span></button>
+  </div>
+</aside>
+<main id="app"><div class="page"><div class="empty">Đang tải…</div></div></main>
+<div id="toasts"></div>
+<script type="module" src="/app/main.js"></script>
+</body>
+</html>
